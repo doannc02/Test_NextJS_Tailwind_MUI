@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    
+.modal-wrapper {
+    width: 800px;
+    height: 500px;
+  }
+  
+  .modal {
+    background: white;
+    height:100%;
+    width:100%;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .modal-overlay{
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-body {
+    padding-top: 10px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.App {
+  text-align: center;
+}
+h1{
+  color: rgb(255, 166, 0);
+}
+
+#Calendar {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+  /* background: yellow; */
+}
+
+.rbc-month-view{
+  flex-basis: 500px !important;
+}
+
+.rbc-toolbar-label {
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(37, 66, 197)
+}
+
+.rbc-date-cell {
+  color: rgb(15, 114, 226);
+}
+
+.rbc-today {
+  background-color: rgb(196, 226, 250) !important;
+}
+
+@media (max-width: 480px) {
+  .rbc-toolbar {
+    display: block !important;
+  }
+  
+}
